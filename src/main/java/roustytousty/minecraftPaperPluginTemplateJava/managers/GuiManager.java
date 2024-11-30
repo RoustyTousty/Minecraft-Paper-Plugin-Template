@@ -1,4 +1,4 @@
-package roustytousty.minecraftPaperPluginTemplate.managers;
+package roustytousty.minecraftPaperPluginTemplateJava.managers;
 
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;

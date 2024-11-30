@@ -1,4 +1,4 @@
-package roustytousty.minecraftPaperPluginTemplate.managers;
+package roustytousty.minecraftPaperPluginTemplateJava.managers;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

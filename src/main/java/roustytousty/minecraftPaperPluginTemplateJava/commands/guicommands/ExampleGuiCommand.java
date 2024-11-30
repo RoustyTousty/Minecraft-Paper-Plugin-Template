@@ -1,4 +1,4 @@
-package roustytousty.minecraftPaperPluginTemplate.commands.guicommands;
+package roustytousty.minecraftPaperPluginTemplateJava.commands.guicommands;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
