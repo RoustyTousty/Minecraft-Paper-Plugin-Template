@@ -90,7 +90,7 @@ public class ExampleGui extends GuiManager implements Listener {
                 )
             )
          */
-        inv.setItem(12, createPlayerHead(
+        inv.setItem(14, createPlayerHead(
                 player,
                 "&eExample Gui Player Head",
                 "&7Hello I am also the example lore!"

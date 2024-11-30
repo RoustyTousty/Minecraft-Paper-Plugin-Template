@@ -1,0 +1,14 @@
+name: Minecraft-Paper-Plugin-Template
+main: roustytousty.minecraftPaperPluginTemplateJava.Main
+version: '1.0'
+author: RoustyTousty
+api-version: '1.21'
+
+commands:
+  exampleplayercommand:
+  exampleargumentcommand:
+
+
+  exampleadmincommand:
+
+  examplegui:

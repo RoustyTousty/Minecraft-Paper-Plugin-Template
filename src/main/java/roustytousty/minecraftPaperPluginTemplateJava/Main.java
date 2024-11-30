@@ -70,7 +70,7 @@ public final class Main extends JavaPlugin {
         this.getCommand("exampleargumentcommand").setExecutor(new ExampleArgumentCommand());
 
         // Admin Commands
-        this.getCommand("examplestaffcommand").setExecutor(new ExampleAdminCommand());
+        this.getCommand("exampleadmincommand").setExecutor(new ExampleAdminCommand());
 
         // Gui Commands
         this.getCommand("examplegui").setExecutor(new ExampleGuiCommand());
