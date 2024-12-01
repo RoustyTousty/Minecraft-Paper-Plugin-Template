@@ -1,4 +1,5 @@
-![Alt text](https://imgur.com/stn0qaf)
+<img src="https://imgur.com/a/Cds7147" alt="Logo">
+
 # Eco Plugin Template!
 
 A simple way to begin learning `Java` minecraft development. We provide a ready and simple template
