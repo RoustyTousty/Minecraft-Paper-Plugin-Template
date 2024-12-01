@@ -1,6 +1,7 @@
-![Example Image](https://i.imgur.com/nU0fRMh.jpg)
-
-# Eco Plugin Template!
+<div align="center">
+  <img src="https://i.imgur.com/nU0fRMh.jpg" alt="Example Image" width="150">
+  <h1>Eco Plugin Template!</h1>
+</div>
 
 A simple way to begin learning `Java` minecraft development. We provide a ready and simple template
 that is specifically made for beginners. This template also includes some commonly used classes in miencraft
@@ -27,11 +28,11 @@ Setup is made as simple as possible and should take much less time than making o
 
 ### Download
 
-Start by cloning this repository to your local device. If you have never used github before we suggest you to use this youtube video that explains everything about github.
+Start by cloning this repository to your local device. If you have never used GitHub before we suggest you to use this YouTube video that explains everything about GitHub.
 
 ### IDE
 
-Setup your IDE () for where you will be viewing your code. We highly suggest using `IntelliJ IDEA` for this
+Set up your IDE () for where you will be viewing your code. We highly suggest using `IntelliJ IDEA` for this
 as this editor is highly focused on Java and offers a free version.
 
 ### Build
@@ -180,7 +181,37 @@ Congratulations! You just made a minecraft command. This method is universal and
 be a copy of each other. Meaning you only need to make it once and every command after will be a 
 copy/paste.
 
-## Using listeners
+## Using event listeners
+<a src="https://docs.papermc.io/paper/dev/event-listeners">Official documentation</a>
+
+Listeners allow us to listen for miencraft events such as `OnPlayerJoinEvent`. In the template we proved
+an example of a player join event.
+
+Let's start off by creating a class that implements a Listener.
+
+```java
+public class ExampleListener implements Listener {
+    
+}
+```
+
+Then we can create a method that will activate once the event is called. Create a method with
+an `@EventHandler` and as an argument pass in `PlayerJoinEvent event` or any other event you
+want.
+
+> [!Note]
+> Editor will provide you with other events. It is as simple as just replacing
+> `PlayerJoinEvent` with some other event.
+
+```java
+public class ExampleListener implements Listener {
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        
+    }
+}
+```
 
 ## Using guis
 
