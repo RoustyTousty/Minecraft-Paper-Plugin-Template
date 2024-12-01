@@ -182,13 +182,14 @@ be a copy of each other. Meaning you only need to make it once and every command
 copy/paste.
 
 ## Using event listeners
-<a src="https://docs.papermc.io/paper/dev/event-listeners">Official documentation</a>
+[Official documentation](https://docs.papermc.io/paper/dev/event-listeners)
 
 Listeners allow us to listen for miencraft events such as `OnPlayerJoinEvent`. In the template we proved
 an example of a player join event.
 
 Let's start off by creating a class that implements a Listener.
 
+<sub><sub>ExamplePlayerCommand.Java</sub>
 ```java
 public class ExampleListener implements Listener {
     
@@ -199,10 +200,14 @@ Then we can create a method that will activate once the event is called. Create 
 an `@EventHandler` and as an argument pass in `PlayerJoinEvent event` or any other event you
 want.
 
-> [!Note]
+> [!Tip]
 > Editor will provide you with other events. It is as simple as just replacing
 > `PlayerJoinEvent` with some other event.
 
+> [!Note]
+> When the event is called, any code inside this method will activate.
+
+<sub><sub>ExamplePlayerCommand.Java</sub>
 ```java
 public class ExampleListener implements Listener {
 
