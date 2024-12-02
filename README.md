@@ -58,7 +58,10 @@ public class ExamplePlayerCommand implements CommandExecutor {
 ```
 
 Now we can create an `@Override` method that listens for the command event. The method will execute any
-code inside it once the command is executed. This will be how every base command will look, which means
+code inside it once the command is executed. 
+
+> [!Note] 
+> This will be how every base command will look, which means
 this part can just be copied from other commands as it is always the same.
 
 <sub><sub>ExamplePlayerCommand.Java</sub>
@@ -157,7 +160,11 @@ following with a `.setExecutor(<class>)` method with the class that we made for 
 
 `this.getCommand("exampleplayercommand").setExecutor(new ExamplePlayerCommand());`
 
-Heres how it would look like in our `Main` class. In the template this would look slightly differrent.
+> [!Note]
+> When registering a command we provide the `.getCommand(<name>)` method with the name of our command,
+> following with a `.setExecutor(<class>)` method with the class that we made for it.
+
+Here's how it would look like in our `Main` class. In the template this would look slightly differrent.
 
 <sub><sub>Main.Java</sub>
 ```java
@@ -204,9 +211,6 @@ want.
 > Editor will provide you with other events. It is as simple as just replacing
 > `PlayerJoinEvent` with some other event.
 
-> [!Note]
-> When the event is called, any code inside this method will activate.
-
 <sub><sub>ExamplePlayerCommand.Java</sub>
 ```java
 public class ExampleListener implements Listener {
@@ -214,6 +218,22 @@ public class ExampleListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         
+    }
+}
+```
+
+Now whenever this event is called, any code inside the method will be executed. Here's an
+example from the template.
+
+<sub><sub>ExamplePlayerCommand.Java</sub>
+```java
+public class ExampleListener implements Listener {
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+
+        event.setJoinMessage("This person joined: " + player.getName());
     }
 }
 ```
