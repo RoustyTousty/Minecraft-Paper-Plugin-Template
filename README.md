@@ -155,9 +155,6 @@ Now lets set the executor of this command to the class we previously made. This 
 `OnEnable()` method for it to work. In our template we seperated in to its own function. For simplicity i will
 put it in the base `OnEnable()` method.
 
-When registering a command we provide the `.getCommand(<name>)` method with the name of our command,
-following with a `.setExecutor(<class>)` method with the class that we made for it.
-
 `this.getCommand("exampleplayercommand").setExecutor(new ExamplePlayerCommand());`
 
 > [!Note]
